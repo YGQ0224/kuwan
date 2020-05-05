@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    background-color:#F4F4F4;
+}
+#main{
+    width:800px;
+    /* height:1800px; */
+    margin:0 auto;
+    /* background-color: #74E7F0; */
+}
+
+#headImg{
+    width:800px;
+    height:150px;
+    background-color:#DFC6EA;
+    float:left;
+}
+#saleInfo{
+    width:800px;
+    height:300px;
+    background-color: white;
+    float:left;
+    border-bottom:solid 5px #F4F4F4;
+}
+#evalute{
+    width:800px;
+    /* height:900px; */
+    background-color: #9500FF;
+    float:left;
+}
+#bottom{
+    width:800px;
+    height:100px;
+    background-color:#D6A6EC;
+    float:left;
+}
+#head{
+    position: relative;
+    top:10px;
+    left:30px;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+#userName{
+    position: relative;
+    top:0px;
+    left:80px;
+    font-size: 30px;
+}
+.info{
+    margin-left:30px;
+    font-size: 20px;
+}
+#eva{
+    font-size: 20px;
+    margin:30px;
+
+}
+.evaHead{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+.evaP{
+    margin-left:30px;
+}
+.evaName{
+    line-height: 30px;
+    margin-left:5px;
+    margin-bottom:5px;
+}
+.evaluate{
+    margin-left:40px;
+    margin-bottom: 100px;
+    float:left;
+}
+.evaInfo{
+    width:800px;
+    border-bottom: 3px #F4F4F4 solid;
+    float:left;
+    background-color:white;
+}

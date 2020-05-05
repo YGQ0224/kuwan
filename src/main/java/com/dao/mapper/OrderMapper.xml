@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.OrderMapper">
+    <select id="selectEvaluate" parameterType="int" resultType="com.pojo.Evaluate">
+        SELECT user_tab.name,user_tab.userImage,order_tab.evaluate
+        FROM sale_tab,order_tab,user_tab,vip_tab
+        WHERE sale_tab.sale_id=order_tab.sale_id AND user_tab.user_id=vip_tab.user_id AND vip_tab.vip_id=sale_tab.vip_id=#{vip_id}
+    </select>
+    <insert id="insertOrder" parameterType="com.pojo.Order">
+        INSERT INTO order_tab(orderNum,sale_id,user_id,orderFlag) VALUES(#{orderNum},#{sale_id},#{user_id},0)
+    </insert>
+
+    <select id="selectOrderAndOther" parameterType="com.pojo.PageInfo" resultType="com.pojo.ShowOrder">
+        SELECT order_tab.orderNum,sale_tab.saleImage,sale_tab.gameLevel,sale_tab.time,order_tab.orderFlag,game_tab.gameName
+        FROM sale_tab,order_tab,game_tab
+        WHERE order_tab.user_id=#{user_id}
+        AND sale_tab.sale_id=order_tab.sale_id
+        AND game_tab.game_id=sale_tab.game_id LIMIT #{startIndex},#{endIndex}
+    </select>
+
+    <select id="selectOrderCountByUserId" parameterType="com.pojo.PageInfo" resultType="int">
+        SELECT COUNT(*)
+        FROM sale_tab,order_tab,game_tab
+        WHERE order_tab.user_id=#{user_id}
+        AND sale_tab.sale_id=order_tab.sale_id
+        AND game_tab.game_id=sale_tab.game_id
+    </select>
+
+    <update id="updateEva" parameterType="com.pojo.Order">
+        update order_tab set evaluate=#{evaluate},orderFlag=1 where orderNum=#{orderNum}
+    </update>
+</mapper>

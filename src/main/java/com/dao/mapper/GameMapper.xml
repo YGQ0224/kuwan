@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.GameMapper">
+    <select id="selectAllGame" parameterType="int" resultType="com.pojo.Game">
+        select game_id,gameName,gameType,gameImage from game_tab where TYPE=#{type}
+    </select>
+    <select id="selectAllGameName" resultType="java.lang.String">
+        select gameName from game_tab;
+    </select>
+</mapper>

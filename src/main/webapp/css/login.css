@@ -1,0 +1,51 @@
+body{
+	background-color: #874E4E;
+
+}
+#contain{
+	background-color: #D8CCCC;
+	width:500px;
+	height:400px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top:-200px;
+	margin-left: -250px;
+	border-radius: 15px;
+}
+.text{
+	width:200px;
+	height:25px;
+}
+#submit{
+	width:202px;
+	height:30px;
+	margin-left: 160px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+p{
+	margin-left:110px;
+	font-size: 20px;
+}
+#name{
+	margin-top:60px;
+}
+.text{
+	border:none;
+	background-color:#D8CCCC;
+	border-bottom: solid;
+}
+p{
+	padding: 7px;
+}
+#register{
+	margin-left:160px;
+	padding-top:30px; 
+	font-size: 17px;
+	
+}
+a{
+	text-decoration: none;
+	color:red;
+}

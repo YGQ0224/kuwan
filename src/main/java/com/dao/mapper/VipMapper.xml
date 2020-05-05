@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.VipMapper">
+    <select id="selectOneByUserId" parameterType="int" resultType="com.pojo.Vip">
+        select vip_id,realName,idCard,tel from vip_tab where user_id=#{user_id}
+    </select>
+    <insert id="insertVip" parameterType="com.pojo.Vip">
+        insert into vip_tab(realName,user_id,tel,idCard) value(#{realName},#{user_id},#{tel},#{idCard})
+    </insert>
+</mapper>

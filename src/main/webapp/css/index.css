@@ -1,0 +1,199 @@
+body{
+	background-color:#F4F4F4;
+	margin:0px;
+}
+#head{
+	height:50px;
+	background-color:#6B86F0;
+}
+#navImage{
+	height:200px;
+	background-color:#8DB4CE;
+}
+#main{
+	height:600px;
+	width:1100px;
+	/* background-color:white; */ 
+	margin:0 auto;
+	margin-top:15px;
+}
+#leftnav{
+	width:250px;
+	height:600px;
+	 background-color:white; 
+	margin-right:10px;
+	float:left;
+	border-radius: 20px;
+}
+#rightContext{
+	width:840px;
+	height:600px;
+	background-color:white;
+	float: left;
+	/*border-radius: 20px;*/
+}
+#bottom{
+	margin:0 auto;
+	height:150px;
+	background-color:#EFC2CC;
+	margin-top:15px;
+}
+ul li{
+	float:left;
+	margin:10px;
+	list-style: none;
+}
+img{
+	width:50px;
+	height:50px;
+	border-radius: 5px;
+}
+p{
+	margin:5px;
+	font-size: 13px;
+}
+ #game,#other{
+	width:250px;
+	height:30px;
+	background-color:#EDD7EF;
+	float:left;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 20px;
+}
+#rightContext1{
+	width:840px;
+	height: 570px;
+	background-color: white;
+	float: left;
+}
+.box{
+	width:208px;
+	border-width: 1px;
+	border-color:#F4F4F4;
+	height:283px;
+	/* background-color:#AE4343; */
+	float:left;
+	border-style: solid;
+
+}
+#nav{
+	width:838px;
+	height:30px;
+	background-color:white;
+	float: left;
+	border-left:solid #F4F4F4 1px;
+	border-right: solid #F4F4F4 1px;
+	/*border-radius: 20px*/;
+}
+span{
+	line-height: 30px;
+}
+#di{
+	margin-left: 20px;
+	float: left;
+}
+.navNum{
+	margin-left: 10px;
+	float: left;
+	color:#C881F3;
+}
+#pageChange{
+	margin-left:500px;
+	float: left;
+}
+#navNum{
+	float:left;
+}
+.navYe{
+	float: left;
+	line-height: 30px;
+	text-decoration: none;
+	margin-left: 10px;
+	color: #C881F3;
+}
+#ye{
+	margin-left: 15px;
+	line-height:30px;
+}
+.goodsImg{
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	width:188px;
+	height:188px;
+	margin-bottom: 0px;
+}
+
+#headWarn{
+	margin-left: 1100px;
+}
+#headWarn,#logInfo,#regInfo{
+	font-size: 15px;
+	line-height: 50px;
+}
+#logInfo,#regInfo{
+	text-decoration: none;
+}
+#userName,#headImg{
+    float: left;
+	line-height: 50px;
+}
+#headImg{
+	width: 50px;
+	height:50px;
+	margin-left:10px;
+	border-radius: 50%;
+}
+#userName{
+	font-size: 20px;
+	text-decoration: none;
+}
+.showName{
+	float: left;
+	margin-left:14px;
+	color:hotpink;
+}
+.gameType{
+	float:right;
+	margin-right:14px;
+	color:skyblue;
+}
+.infoA{
+	float:left;
+	margin-left: 10px;
+	font-size: 14px;
+	text-decoration: none;
+}
+.buyUrl{
+	/*margin-top:50px;*/
+	float:left;
+	margin-left:20px;
+	position: relative;
+	top:-28px;
+	left:110px;
+	border-style: none;
+	border-radius: 40px;
+	background-color: darkgrey;
+	font-size: 15px;
+}
+.infoP{
+	float:left;
+	margin-top:0px;
+}
+.price{
+	float:left;
+	font-size: 20px;
+	margin-left:10px;
+	color:red;
+}
+.buyInfo{
+	/*margin-top:30px;*/
+	margin-right: 90px;
+}
+#logOut{
+	margin-left:10px;
+	text-decoration: none;
+}
+

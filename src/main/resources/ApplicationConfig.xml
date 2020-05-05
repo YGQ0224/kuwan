@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:component-scan base-package="com.dao"/>
+    <context:component-scan base-package="com.service.impl"/>
+    <!--将连接数据库的字符串文件加载进来-->
+    <context:property-placeholder file-encoding="UTF-8" location="dateSource.properties"/>
+    <!--配置数据源，使用spring_jdbc自带的数据源————DriverManagerDateSource-->
+    <bean id="dateSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.name}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--整合mybatis-->
+    <!--配置sqlSessionFactoryBean-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指名数据源-->
+        <property name="dataSource" ref="dateSource"/>
+        <!--加载mybatis配置文件-->
+        <property name="configLocation" value="classpath:sqlManager.xml"/>
+        <!--若映像文件和接口不在同一目录，则设置如下属性指明映射文件的位置一定要在前面加上（classpath*:）-->
+        <property name="mapperLocations" value="classpath*:com/dao/mapper/*Mapper.xml"/>
+    </bean>
+    <!--配置在代理模式下mybatis扫描的接口的位置-->
+    <bean id="mapperScan" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.dao"/>
+    </bean>
+
+
+    <bean id="loginService" class="com.service.impl.LoginServiceImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
+    <bean id="registerService" class="com.service.impl.RegisterServiceImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
+    <bean id="show" class="com.service.impl.ShowImpl">
+        <property name="gameMapper" ref="gameMapper"/>
+    </bean>
+
+    <bean id="showMain" class="com.service.impl.ShowMainImpl">
+        <property name="mangTabMapper" ref="mangTabMapper"/>
+    </bean>
+
+    <bean id="showSale" class="com.service.impl.ShowSaleImpl">
+        <property name="saleMapper" ref="saleMapper"/>
+    </bean>
+
+    <bean id="showEvaluate" class="com.service.impl.ShowEvaluateImpl">
+        <property name="orderMapper" ref="orderMapper"/>
+    </bean>
+
+    <bean id="buyService" class="com.service.impl.BuyServiceImpl">
+        <property name="orderMapper" ref="orderMapper"/>
+        <property name="userMapper" ref="userMapper"/>
+        <property name="saleMapper" ref="saleMapper"/>
+    </bean>
+
+    <bean id="selectVip" class="com.service.impl.SelectVipImpl">
+        <property name="vip" ref="vipMapper"/>
+    </bean>
+
+    <bean id="showPersonalOrder" class="com.service.impl.ShowPersonalOrderImpl">
+        <property name="orderMapper" ref="orderMapper"/>
+    </bean>
+
+    <bean id="showPersonalSale" class="com.service.impl.ShowPersonalSaleImpl">
+        <property name="saleMapper" ref="saleMapper"/>
+    </bean>
+
+    <bean id="realEnter" class="com.service.impl.RealEnterImpl">
+        <property name="vipMapper" ref="vipMapper"/>
+    </bean>
+
+    <bean id="getGameName" class="com.service.impl.GetAllGameNameImpl">
+        <property name="game" ref="gameMapper"/>
+    </bean>
+
+    <bean id="releaseSale" class="com.service.impl.RreleaseSaleSevImpl">
+        <property name="saleMapper" ref="saleMapper"/>
+    </bean>
+
+    <bean id="updateUserImage" class="com.service.impl.UpdateUserImageImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
+    <bean id="updateUserInfo" class="com.service.impl.UpdateUserInfoSevImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
+    <bean id="deleteSale" class="com.service.impl.DeleteSaleImpl">
+        <property name="saleMapper" ref="saleMapper"/>
+    </bean>
+
+    <bean id="uploadEva" class="com.service.impl.UpdateEvaImpl">
+        <property name="orderMapper" ref="orderMapper"/>
+    </bean>
+    
+    <!--为交易过程配置事务管理-->
+    <!--1、配置事务管理器，指明数据源-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dateSource"/>
+    </bean>
+    <!--2、配置事务的切面-->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <!--事务管理，在下面这个地方一定要写清楚要代理的方法，否则事务管理不起作用-->
+            <tx:method name="transaction"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* com.service.impl.BuyServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"/>
+    </aop:config>
+
+</beans>

@@ -1,0 +1,48 @@
+#saleInfo{
+    width:800px;
+    height: 500px;
+    background-color: white;
+}
+.saleInfoList{
+    width:800px;
+    height:140px;
+    background-color: #B8EEEA;
+    border-bottom: 1px  solid #DCD2D2;
+    float: left;
+}
+.orderImg{
+    width:96px;
+    height:120px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    float: left;
+}
+.orderInfo{
+    position: relative;
+    top:50px;
+    left:70px;
+    float: left;
+    font-size: 25px;
+}
+.evaBtn{
+    float:left;
+    position: relative;
+    top:50px;
+    left: 200px;
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color: #B19898;
+
+}
+.state{
+    float:left;
+    position: relative;
+    top:60px;
+    left:150px;
+    color:red;
+}

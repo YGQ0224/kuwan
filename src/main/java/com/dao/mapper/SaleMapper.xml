@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.SaleMapper">
+    <select id="selectById" parameterType="int" resultType="com.pojo.Sale">
+        SELECT game_tab.gameName,user_tab.name,user_tab.userImage,sale_tab.vip_id,sale_tab.gameNick,sale_tab.gameLevel,sale_tab.price,sale_tab.time,sale_tab.instroduce
+        FROM sale_tab,user_tab,vip_tab,game_tab
+        WHERE sale_id=#{sale_id} AND sale_tab.game_id=game_tab.game_id AND sale_tab.vip_id=vip_tab.vip_id AND user_tab.user_id=vip_tab.user_id
+    </select>
+    <update id="updateSaleFlag" parameterType="int">
+        UPDATE sale_tab SET saleFlag=1 WHERE sale_id=#{sale_id}
+    </update>
+
+    <select id="selectPersonalSale" parameterType="com.pojo.PageInfo" resultType="com.pojo.PersonalSale">
+        SELECT sale_tab.sale_id,sale_tab.saleImage,sale_tab.gameLevel,sale_tab.time,sale_tab.saleFlag,game_tab.gameName
+        FROM sale_tab,game_tab,vip_tab
+        WHERE sale_tab.vip_id=vip_tab.vip_id
+        AND vip_tab.user_id=#{user_id}
+        AND game_tab.game_id=sale_tab.game_id LIMIT #{startIndex},#{endIndex}
+    </select>
+
+    <select id="selectPersonalSaleCount" parameterType="com.pojo.PageInfo" resultType="int">
+        SELECT COUNT(*)
+        FROM sale_tab,game_tab,vip_tab,user_tab
+        WHERE sale_tab.vip_id=vip_tab.vip_id
+        AND user_tab.user_id=vip_tab.user_id=#{user_id}
+        AND game_tab.game_id=sale_tab.game_id
+    </select>
+
+    <insert id="insertSale" parameterType="com.pojo.Sale">
+        INSERT INTO sale_tab(vip_id,game_id,time,price,saleFlag,gameLevel,gameNick,instroduce)
+        VALUES(#{vip_id},
+        (SELECT game_tab.game_id FROM game_tab WHERE game_tab.gameName=#{gameName}),
+        #{time},#{price},0,#{gameLevel},#{gameNick},#{instroduce})
+    </insert>
+
+    <delete id="deleteSale" parameterType="int">
+        delete from sale_tab where sale_id=#{sale_id}
+    </delete>
+</mapper>

@@ -1,0 +1,80 @@
+body{
+    margin:0px;
+    background-color:#F4F4F4;
+}
+#main{
+    width:800px;
+    margin:0 auto;
+}
+#head{
+    width:800px;
+    height:100px;
+    background-color: #C0F1A6;
+}
+#orderInfo{
+    width:800px;
+    height:600px;
+    background-color: white;
+    float:left;
+}
+#bottom{
+    width:800px;
+    height:200px;
+    background-color: #B1EBCE;
+}
+#gameImg{
+    width:100px;
+    height:150px;
+    position: relative;
+    top:80px;
+    left:0px;
+    float: left;
+}
+#saleInfo{
+    font-size: 25px;
+    position: relative;
+    top:130px;
+    left:10px;
+    float:left;
+    color:grey;
+}
+#enterInfo{
+    float:left;
+    position: relative;
+    top:30px;
+    left:30px;
+}
+#orderNum{
+    float:left;
+    position: relative;
+    top:250px;
+    left:-400px;
+}
+#marnInfo{
+    float:left;
+    position: relative;
+    top:250px;
+    left:-90px;
+}
+#entreBuy{
+    float:left;
+    position: relative;
+    top:350px;
+    left:0px;
+    width:120px;
+    height:40px;
+    font-size: 20px;
+    border:none;
+    border-radius: 10px;
+    background-color: #ED3232;
+}
+#price{
+    font-size: 25px;
+    float:left;
+    position: relative;
+    top:250px;
+    left:120px;
+}
+#priceNum{
+    color:red;
+}

@@ -1,0 +1,177 @@
+body{
+    background-color:#F4F4F4;
+    margin: 0px;
+}
+#main{
+    width:1000px;
+    height:780px;
+    background-color:white;
+    margin:0 auto;
+}
+#head{
+    width:1000px;
+    height:150px;
+    background-color: #CAA5D7;
+}
+#headNav{
+    width:1000px;
+    height:30px;
+    background-color: #F0B5C3;
+}
+#context{
+    width:1000px;
+    height:500px;
+    background-color:white;
+}
+#bottom{
+    width:1000px;
+    height:100px;
+    background-color: #827474;
+}
+#index{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left:20px;
+}
+#leftNav{
+    width:200px;
+    height:500px;
+    float:left;
+    background-color: #B4B1BD;
+}
+#rightContext{
+    width:800px;
+    height:500px;
+    background-color:white;
+    float:left;
+}
+.leftNavList{
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom:1px solid #E4DDDD;
+    margin:0px;
+    letter-spacing: 4px;
+}
+#personalInfo,#personalSale,#personalMoney,#orderInfo1,#releaseSale,#realEnter{
+    text-decoration: none;
+    color:black;
+}
+
+/*orderInfo*/
+#orderInfo{
+    width:800px;
+    height: 500px;
+    background-color: white;
+}
+.orderInfoList{
+    width:800px;
+    height:140px;
+    background-color: #B8EEEA;
+    border-bottom: 1px  solid #DCD2D2;
+    float: left;
+}
+.saleImg{
+    width:96px;
+    height:120px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    float: left;
+}
+.saleInfo{
+    position: relative;
+    top:50px;
+    left:70px;
+    float: left;
+    font-size: 25px;
+}
+.evaBut{
+    float:left;
+    position: relative;
+    top:50px;
+    left: 200px;
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color: #B19898;
+
+}
+
+/*personalSale*/
+#saleInfo{
+    width:800px;
+    height: 500px;
+    background-color: white;
+}
+.saleInfoList{
+    width:800px;
+    height:140px;
+    background-color: #B8EEEA;
+    border-bottom: 1px  solid #DCD2D2;
+    float: left;
+}
+.orderImg{
+    width:96px;
+    height:120px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    float: left;
+}
+.orderInfo{
+    position: relative;
+    top:50px;
+    left:40px;
+    float: left;
+    font-size: 25px;
+}
+.evaBtn{
+    float:left;
+    position: relative;
+    top:50px;
+    left: 170px;
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color: #B19898;
+
+}
+.state{
+    float:left;
+    position: relative;
+    top:60px;
+    left:150px;
+    color:red;
+}
+.state1{
+    float:left;
+    position: relative;
+    top:60px;
+    left:110px;
+    color:red;
+}
+
+#saleWarnInfo{
+    text-align: center;
+    margin-top:200px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: red;
+}
+#orderWarnInfo{
+    text-align: center;
+    margin-top:200px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: red;
+}

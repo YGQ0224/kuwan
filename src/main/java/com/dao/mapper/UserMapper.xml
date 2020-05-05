@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UserMapper">
+    <select id="selectCount" parameterType="com.pojo.User" resultType="int">
+        select count(name) from user_tab where name=#{name}
+    </select>
+    <select id="selectOne" parameterType="int" resultType="com.pojo.User">
+        select * from user_tab where id=#{id}
+    </select>
+    <select id="selectByName" parameterType="com.pojo.User" resultType="com.pojo.User">
+        select * from user_tab where name=#{name}
+    </select>
+    <insert id="insertUser" parameterType="com.pojo.User">
+        insert into user_tab(name,password,birthday,sex,vipFlag) values (#{name},#{password},#{birthday},#{sex},0)
+    </insert>
+
+    <update id="updateMoney" parameterType="com.pojo.User">
+        UPDATE user_tab SET money =#{money} WHERE user_id=#{user_id}
+    </update>
+
+    <update id="updateUserImage" parameterType="com.pojo.User">
+        UPDATE user_tab SET userImage=#{userImage} WHERE user_id=#{user_id}
+    </update>
+
+    <update id="updateUserInfo" parameterType="com.pojo.User">
+        UPDATE user_tab SET name=#{name},sex=#{sex},birthday=#{birthday} WHERE user_id=#{user_id}
+    </update>
+</mapper>

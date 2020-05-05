@@ -1,0 +1,53 @@
+#personalInfoMain{
+    width:800px;
+    height:500px;
+    background-color: white;
+    float:left;
+}
+#personalImg{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top:0px;
+}
+.personalValue{
+
+    margin-left: 50px;
+}
+.personalInfo{
+    margin-top:30px;
+    margin-left: 40px;
+}
+#changeImg{
+    margin-right:80px;
+    float:right;
+    margin-top:-40px;
+}
+#personalChangeButton{
+    margin-top:30px;
+    margin-left: 450px;
+}
+#personalbutton{
+    width:100px;
+    height:30px;
+    font-size: 17px;
+    border:none;
+    border-radius: 10px;
+    background-color: #8D848E;
+}
+
+#upload{
+    width:190px;
+    border-radius: 10px;
+    background-color:#8C8080;
+}
+#uploadSub{
+    margin-left: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color: #8D848E;
+    height:30px;
+    width:50px;
+    letter-spacing: 2px;
+}

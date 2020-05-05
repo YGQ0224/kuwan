@@ -1,0 +1,36 @@
+body{
+    background-color: #F4F4F4;
+    margin:0px;
+}
+#uploadsMain{
+    position: relative;
+    left:50%;
+    margin-left:-300px;
+    width:600px;
+    height:800px;
+    background-color:#BDB0BC;
+    float: left;
+    padding-top:40px;
+}
+.userInfo{
+    margin-top:40px;
+    margin-left: 140px;
+    font-size: 18px;
+}
+.userInfoInput{
+    width:170px;
+    background-color: #BDB0BC;
+    border:none;
+    border-bottom: 1px black solid;
+}
+#uploadSub{
+    margin-left:220px;
+    margin-top:50px;
+    width:140px;
+    height: 30px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    border:none;
+    background-color: #AC9E9E;
+    border-radius: 10px;
+}

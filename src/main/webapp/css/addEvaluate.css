@@ -1,0 +1,40 @@
+body{
+    margin:0px;
+    background-color: #F4F4F4;
+}
+#evaText{
+    width:500px;
+    height:300px;
+    float:left;
+    margin-left:100px;
+    background-color: #D4DBD1;
+    font-size: 17px;
+}
+#evaP{
+    margin-left:30px;
+    margin-top:40px;
+}
+#evaMain{
+    position: relative;
+    left:50%;
+    margin-left: -350px;
+    width:700px;
+    height: 550px;
+    background-color: white;
+    float: left;
+}
+#evaSub{
+    width:120px;
+    height: 35px;
+    margin-left:280px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border:none;
+    background-color: #918C8C;
+    letter-spacing: 3px;
+    font-size: 17px;
+
+}
+#git{
+  color:red;
+}

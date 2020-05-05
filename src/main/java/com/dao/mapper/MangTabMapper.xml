@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.MangTabMapper">
+    <select id="selectNIP" parameterType="com.pojo.PageInfo" resultType="com.pojo.ShowSale">
+        select user_tab.user_id,user_tab.money,sale_tab.time,sale_tab.gameLevel,sale_tab.sale_id,game_tab.gameName,user_tab.name,sale_tab.saleImage,sale_tab.price
+        from game_tab,user_tab,sale_tab,vip_tab
+        where game_tab.game_id=sale_tab.game_id=#{game_id}
+        and sale_tab.vip_id=vip_tab.vip_id
+        and sale_tab.saleFlag=0
+        and vip_tab.user_id=user_tab.user_id limit #{startIndex},#{endIndex}
+    </select>
+    <select id="selectCount" parameterType="com.pojo.PageInfo" resultType="int">
+        select count(*)
+        from game_tab,user_tab,sale_tab,vip_tab
+        where game_tab.game_id=sale_tab.game_id=#{game_id}
+        and sale_tab.vip_id=vip_tab.vip_id
+        and vip_tab.user_id=user_tab.user_id
+        and sale_tab.saleFlag=0
+    </select>
+    <select id="selectAllNIP" parameterType="com.pojo.PageInfo" resultType="com.pojo.ShowSale">
+        select user_tab.user_id,user_tab.money,sale_tab.time,sale_tab.gameLevel,sale_tab.sale_id,game_tab.gameName,user_tab.name,sale_tab.saleImage,sale_tab.price
+        from game_tab,user_tab,sale_tab,vip_tab
+        where game_tab.game_id=sale_tab.game_id
+        and sale_tab.vip_id=vip_tab.vip_id
+        and sale_tab.saleFlag=0
+        and vip_tab.user_id=user_tab.user_id limit #{startIndex},#{endIndex}
+    </select>
+    <select id="selectAllCount" resultType="int">
+        select count(*)
+        from game_tab,user_tab,sale_tab,vip_tab
+        where game_tab.game_id=sale_tab.game_id
+        and sale_tab.vip_id=vip_tab.vip_id
+        and vip_tab.user_id=user_tab.user_id
+        and sale_tab.saleFlag=0
+    </select>
+</mapper>

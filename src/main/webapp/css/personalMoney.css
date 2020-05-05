@@ -1,0 +1,28 @@
+#moneyMain{
+    width:800px;
+    height:500px;
+    background-color: white;
+}
+#moneySpan{
+    float: left;
+    width:400px;
+    height:150px;
+    background-color: #F4F4F4;
+    margin-top:100px;
+    margin-left:200px;
+    text-align: center;
+    line-height: 150px;
+    color: red;
+    font-size: 40px;
+    border-radius: 20px;
+}
+#returnBtn{
+    width:130px;
+    height:35px;
+    border:none;
+    border-radius: 10px;
+    background-color: #9C939A;
+    font-size: 16px;
+    margin-left:335px;
+    margin-top:40px;
+}

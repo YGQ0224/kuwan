@@ -7,8 +7,8 @@ body{
 	background-color:#6B86F0;
 }
 #navImage{
-	height:200px;
-	background-color:#8DB4CE;
+	height:300px;
+	background-color:#F4F4F4;
 }
 #main{
 	height:600px;
@@ -195,5 +195,36 @@ span{
 #logOut{
 	margin-left:10px;
 	text-decoration: none;
+}
+#wrap{
+	height: 300px;
+	width:1100px;
+	margin:0 auto;
+	float:left;
+	position: relative;
+	top:-26px;
+	left:200px;
+}
+.list{
+	width:1100px;
+	height:300px;
+	list-style: none;
+	padding:0px;
+	position: relative;
+}
+.item{
+	position: absolute;
+	width:100%;
+	height:100%;
+	opacity: 0;
+	transition: all .9s;
+}
+.item.active{
+	z-index:100000;
+	opacity: 1;
+}
+.carImg{
+	width:1100px;
+	height:300px;
 }
 

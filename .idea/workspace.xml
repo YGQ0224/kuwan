@@ -7,159 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4ef124-7172-4bce-94d6-eb301742a745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/kuwan.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/BuyCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DeleteSaleCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/EnterBuy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/InsertVipCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/RegisterCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ReleaseSaleCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShowMainCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShowPersonalCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShowSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/UpdateEvaCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/UpdateUserInfoCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/UploadUserImageCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/logOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/GameMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/MangTabMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/SaleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/VipMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/GameMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/MangTabMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/SaleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/VipMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Evaluate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Msg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/PersonalSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/ShowOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/ShowSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Vip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/BuyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/DeleteSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/GetGameAllName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/RealEnter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/RegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ReleaseSaleSev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/SelectVip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/Show.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShowEvaluate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShowMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShowPersonalOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShowPersonalSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShowSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/UpdateEva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/UpdateUserImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/UpdateUserInfoSev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/BuyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/DeleteSaleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/GetAllGameNameImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/RealEnterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/RegisterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/RreleaseSaleSevImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/SelectVipImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowEvaluateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowMainImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowPersonalOrderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowPersonalSaleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShowSaleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/UpdateEvaImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/UpdateUserImageImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/UpdateUserInfoSevImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ApplicationConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dateSource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/addEvaluate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/deleteSaleSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/enterOrder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/enterRealSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/orderInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/personal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/personalInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/personalMoney.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/personalSale.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/realEnter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/releaseSale.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/releaseSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/saleInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/success.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/updateEvaSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/updateUserInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/updateUserInfoSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/uploadsSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/17fc74e0-ecb7-4c87-9b3f-720adc135533uuuuuuu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/U1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/U2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/U3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/U4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/U5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/nameError.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/nameRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=1430267255,1728692051fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=1588855337,1619856908fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=175449694,862395299fm=15gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=1992957658,4292036838fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=3243476388,997001710fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=3594596470,3258599353fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=3752627427,534378543fm=26gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/u=3766675073,939112508fm=15gp=0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/addEvaluate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/deleteSaleSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/enterOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/enterRealSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/orderInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/personal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/personalInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/personalMoney.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/realEnter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/releaseSale.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/releaseSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/saleInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/successReg.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/updateEvaSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/updateUserInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/updateUserInfoSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/uploadsSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/CI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/SJ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/WZ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/YX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/buluochongtu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/cijizhanchang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/wangzherongyao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/wodeshijie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/yinxionlianmeng.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/InsertVipCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/InsertVipCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ReleaseSaleCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ReleaseSaleCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/MangTabMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/MangTabMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/SaleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/SaleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/personal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/personal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/personal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/personal.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +81,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1aso8bbIdDvO4vh2OfpSm0sl8jW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/image" />
@@ -437,6 +307,13 @@
       <workItem from="1588514924494" duration="67000" />
       <workItem from="1588517094054" duration="20000" />
       <workItem from="1588519129586" duration="1808000" />
+      <workItem from="1588768581597" duration="261000" />
+      <workItem from="1588850950644" duration="2424000" />
+      <workItem from="1589504408209" duration="91000" />
+      <workItem from="1590806334631" duration="271000" />
+      <workItem from="1590821310553" duration="853000" />
+      <workItem from="1590824847467" duration="255000" />
+      <workItem from="1590831460498" duration="12197000" />
     </task>
     <servers />
   </component>
@@ -455,5 +332,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

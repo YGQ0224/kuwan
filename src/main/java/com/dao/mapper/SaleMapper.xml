@@ -28,10 +28,10 @@
     </select>
 
     <insert id="insertSale" parameterType="com.pojo.Sale">
-        INSERT INTO sale_tab(vip_id,game_id,time,price,saleFlag,gameLevel,gameNick,instroduce)
+        INSERT INTO sale_tab(vip_id,game_id,time,price,saleFlag,gameLevel,gameNick,instroduce,saleImage)
         VALUES(#{vip_id},
         (SELECT game_tab.game_id FROM game_tab WHERE game_tab.gameName=#{gameName}),
-        #{time},#{price},0,#{gameLevel},#{gameNick},#{instroduce})
+        #{time},#{price},0,#{gameLevel},#{gameNick},#{instroduce},#{saleImage})
     </insert>
 
     <delete id="deleteSale" parameterType="int">

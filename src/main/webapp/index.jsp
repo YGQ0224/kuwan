@@ -5,7 +5,8 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.pojo.Game" %>
 <%@ page import="com.pojo.ShowSale" %>
-<%@ page import="com.pojo.User" %><%--
+<%@ page import="com.pojo.User" %>
+<%--
   Created by IntelliJ IDEA.
   User: YGQ
   Date: 2020/4/22
@@ -30,7 +31,15 @@
     <%}%>
 </div>
 <div id=navImage>
-
+    <div id="wrap">
+        <ul class="list">
+            <li class="item"><img src="<%=request.getContextPath()%>/image/buluochongtu.jpg" alt="" class="carImg"></li>
+            <li class="item"><img src="<%=request.getContextPath()%>/image/wangzherongyao.jpg" alt="" class="carImg"></li>
+            <li class="item"><img src="<%=request.getContextPath()%>/image/cijizhanchang.jpg" alt="" class="carImg"></li>
+            <li class="item"><img src="<%=request.getContextPath()%>/image/yinxionlianmeng.jpg" alt="" class="carImg"></li>
+            <li class="item"><img src="<%=request.getContextPath()%>/image/wodeshijie.jpg" alt="" class="carImg"></li>
+        </ul>
+    </div>
 </div>
 <div id="main">
     <div id="leftnav">
@@ -42,9 +51,8 @@
         %>
         <ul>
             <% if(listGame.size()>0){
-                for(int i=0;i<listGame.size();i++){
-                int game_id = listGame.get(i).getGame_id();%>
-                    <a href="<%=request.getContextPath()%>/showMain/showSlae?startIndex=0&endIndex=8&game_id=<%=game_id%>&currentPage=1"><li><p><img src="<%=request.getContextPath()%>/<%=listGame.get(i).getGameImage()%>"></p><p><%=listGame.get(i).getGameName()%></p></li></a>
+                for(int i=0;i<listGame.size();i++){%>
+                    <a href="<%=request.getContextPath()%>/showMain/showSlae?startIndex=0&endIndex=8&game_id=<%=listGame.get(i).getGame_id()%>&currentPage=1"><li><p><img src="<%=request.getContextPath()%>/<%=listGame.get(i).getGameImage()%>"></p><p><%=listGame.get(i).getGameName()%></p></li></a>
             <%}}%>
         </ul>
         <div id="other">其他</div>
@@ -132,5 +140,30 @@
 <div id="bottom">
 
 </div>
+<script type="text/javascript">
+    var items=document.getElementsByClassName('item');
+    var index=0;
+    function clear(){
+        for(var i=0;i<items.length;i++){
+            items[i].className='item';
+        }
+    }
+    function goIndex(){
+        if(index<5 && index>=0){
+            clear();
+            items[index].className='item active';
+            index++;
+        }else{
+            index=0;
+            clear();
+            items[index].className='item active';
+        }
+
+    }
+    window.onload=function(){
+        goIndex();
+        var count = setInterval("goIndex()" ,3500);
+    }
+</script>
 </body>
 </html>

@@ -21,12 +21,13 @@ public class InsertVipCon {
         RealEnter realEnter = (RealEnter)ac.getBean("realEnter");
         ModelAndView mv = new ModelAndView();
         User user = (User)request.getSession().getAttribute("user");
+        request.getSession().removeAttribute("user");
+        user.setVipFlag(1);
+        request.getSession().setAttribute("user",user);
         vip.setUser_id(user.getUser_id());
         realEnter.insertVip(vip);
-        user.setVipFlag(1);
-        request.getSession().removeAttribute("user");
-        request.getSession().setAttribute("user",user);
-
+        //将vip信息存入session
+        request.getSession().setAttribute("vip",vip);
         mv.setViewName("/page/enterRealSuccess");
         return mv;
     }

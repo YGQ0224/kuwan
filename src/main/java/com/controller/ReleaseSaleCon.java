@@ -20,6 +20,24 @@ public class ReleaseSaleCon {
         ReleaseSaleSev releaseSaleSev = (ReleaseSaleSev)ac.getBean("releaseSale");
         ModelAndView mv = new ModelAndView();
         Vip vip = (Vip)request.getSession().getAttribute("vip");
+        String gameName = sale.getGameName();
+        switch(gameName){
+            case "部落冲突":
+                sale.setSaleImage("image/u=175449694,862395299fm=15gp=0.jpg");
+                break;
+            case "王者荣耀":
+                sale.setSaleImage("image/WZ.jpeg");
+                break;
+            case "刺激战场":
+                sale.setSaleImage("image/CI.jpg");
+                break;
+            case "我的世界":
+                sale.setSaleImage("image/SJ.jpeg");
+                break;
+            case "英雄联盟":
+                sale.setSaleImage("image/YX.jpg");
+                break;
+        }
         sale.setVip_id(vip.getVip_id());
         releaseSaleSev.insertSale(sale);
         mv.setViewName("/page/releaseSuccess");

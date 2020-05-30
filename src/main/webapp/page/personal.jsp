@@ -15,6 +15,25 @@
     <title>个人中心</title>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/personal.css">
     <script rel="script" type="text/javascript">
+        var items=document.getElementsByClassName('item');
+        var index=0;
+        function clear(){
+            for(var i=0;i<items.length;i++){
+                items[i].className='item';
+            }
+        }
+        function goIndex(){
+            if(index<5 && index>=0){
+                clear();
+                items[index].className='item active';
+                index++;
+            }else{
+                index=0;
+                clear();
+                items[index].className='item active';
+            }
+
+        }
         window.onload=function(){
             var oPersonalInfo=document.getElementById("personalInfo");
             var oPersonalSale=document.getElementById("personalSale");
@@ -29,6 +48,8 @@
             var orderInfo4=document.getElementById("4");
             var oRealEnter5=document.getElementById("5");
             var oReleaseSale6=document.getElementById("6");
+
+
 
             oReleaseSale.onclick=function () {
                 oReleaseSale6.style.display="block";
@@ -125,12 +146,22 @@
                 oRealEnter.parentElement.style.backgroundColor="";
                 return false;
             }
+            goIndex();
+            var count = setInterval("goIndex()" ,3500);
         }
     </script>
 </head>
 <body>
     <div id="main">
-        <div id="head"></div>
+        <div id="head">
+            <ul class="list">
+                <li class="item"><img src="<%=request.getContextPath()%>/image/buluochongtu.jpg" alt="" class="carImg"></li>
+                <li class="item"><img src="<%=request.getContextPath()%>/image/wangzherongyao.jpg" alt="" class="carImg"></li>
+                <li class="item"><img src="<%=request.getContextPath()%>/image/cijizhanchang.jpg" alt="" class="carImg"></li>
+                <li class="item"><img src="<%=request.getContextPath()%>/image/yinxionlianmeng.jpg" alt="" class="carImg"></li>
+                <li class="item"><img src="<%=request.getContextPath()%>/image/wodeshijie.jpg" alt="" class="carImg"></li>
+            </ul>
+        </div>
         <div id="headNav"><a href="<%=request.getContextPath()%>/index.jsp" id="index">返回首页</a></div>
             <div id="context">
                 <div id="leftNav">
@@ -201,6 +232,31 @@
             </div>
         <div  id="bottom"></div>
     </div>
+   <%-- <script type="text/javascript">
+        var items=document.getElementsByClassName('item');
+        var index=0;
+        function clear(){
+            for(var i=0;i<items.length;i++){
+                items[i].className='item';
+            }
+        }
+        function goIndex(){
+            if(index<5 && index>=0){
+                clear();
+                items[index].className='item active';
+                index++;
+            }else{
+                index=0;
+                clear();
+                items[index].className='item active';
+            }
+
+        }
+        window.onload=function(){
+            goIndex();
+            var count = setInterval("goIndex()" ,3500);
+        }
+    </script>--%>
 </body>
 </html>
 

@@ -12,6 +12,15 @@ public class Sale {
     private int price;
     private Date time;
     private String instroduce;
+    private String saleImage;
+
+    public String getSaleImage() {
+        return saleImage;
+    }
+
+    public void setSaleImage(String saleImage) {
+        this.saleImage = saleImage;
+    }
 
     public int getVip_id() {
         return vip_id;

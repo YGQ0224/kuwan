@@ -12,7 +12,7 @@
         select * from user_tab where name=#{name}
     </select>
     <insert id="insertUser" parameterType="com.pojo.User">
-        insert into user_tab(name,password,birthday,sex,vipFlag) values (#{name},#{password},#{birthday},#{sex},0)
+        insert into user_tab(name,password,birthday,sex,vipFlag,money) values (#{name},#{password},#{birthday},#{sex},0,1000)
     </insert>
 
     <update id="updateMoney" parameterType="com.pojo.User">

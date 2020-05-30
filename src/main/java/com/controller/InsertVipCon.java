@@ -26,6 +26,9 @@ public class InsertVipCon {
         request.getSession().setAttribute("user",user);
         vip.setUser_id(user.getUser_id());
         realEnter.insertVip(vip);
+        int vip_id=realEnter.selectVipId(user.getUser_id());
+        System.out.println("-----------------"+vip_id);
+        vip.setVip_id(vip_id);
         //将vip信息存入session
         request.getSession().setAttribute("vip",vip);
         mv.setViewName("/page/enterRealSuccess");

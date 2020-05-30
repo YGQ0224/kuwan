@@ -6,26 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb4ef124-7172-4bce-94d6-eb301742a745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/CI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/SJ.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/WZ.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/YX.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/buluochongtu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/cijizhanchang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/wangzherongyao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/wodeshijie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/yinxionlianmeng.jpg" afterDir="false" />
+    <list default="true" id="eb4ef124-7172-4bce-94d6-eb301742a745" name="Default Changelist" comment="添加轮播图，修复不能按游戏种类显示订单的BUG和实名认证后个人信息界面依然显示“请完成实名认证”的BUG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/InsertVipCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/InsertVipCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ReleaseSaleCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ReleaseSaleCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/MangTabMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/MangTabMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/SaleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/SaleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/personal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/personal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/personal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/personal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/VipMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/VipMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/mapper/VipMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/mapper/VipMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/RealEnter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/RealEnter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/RealEnterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/RealEnterImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -314,7 +303,16 @@
       <workItem from="1590821310553" duration="853000" />
       <workItem from="1590824847467" duration="255000" />
       <workItem from="1590831460498" duration="12197000" />
+      <workItem from="1590847483741" duration="4008000" />
     </task>
+    <task id="LOCAL-00001" summary="添加轮播图，修复不能按游戏种类显示订单的BUG和实名认证后个人信息界面依然显示“请完成实名认证”的BUG">
+      <created>1590847664258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590847664258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,5 +333,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加轮播图，修复不能按游戏种类显示订单的BUG和实名认证后个人信息界面依然显示“请完成实名认证”的BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加轮播图，修复不能按游戏种类显示订单的BUG和实名认证后个人信息界面依然显示“请完成实名认证”的BUG" />
   </component>
 </project>

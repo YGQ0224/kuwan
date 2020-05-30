@@ -8,4 +8,7 @@
     <insert id="insertVip" parameterType="com.pojo.Vip">
         insert into vip_tab(realName,user_id,tel,idCard) value(#{realName},#{user_id},#{tel},#{idCard})
     </insert>
+    <select id="selectVipId" parameterType="int" resultType="int">
+        select vip_id from vip_tab where user_id=#{user_id}
+    </select>
 </mapper>

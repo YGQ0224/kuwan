@@ -39,6 +39,7 @@ public class ReleaseSaleCon {
                 break;
         }
         sale.setVip_id(vip.getVip_id());
+
         releaseSaleSev.insertSale(sale);
         mv.setViewName("/page/releaseSuccess");
         return mv;

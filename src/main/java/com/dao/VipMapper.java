@@ -7,4 +7,5 @@ import java.util.List;
 public interface VipMapper {
     List<Vip> selectOneByUserId(int user_id);
     void insertVip(Vip vip);
+    int selectVipId(int user_id);
 }

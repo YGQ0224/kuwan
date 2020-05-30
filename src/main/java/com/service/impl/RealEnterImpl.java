@@ -15,4 +15,7 @@ public class RealEnterImpl implements RealEnter {
     public void insertVip(Vip vip) {
         vipMapper.insertVip(vip);
     }
+    public int selectVipId(int user_id){
+        return  vipMapper.selectVipId(user_id);
+    }
 }
